@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: black;
+    height: 70px;
+}
+section{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    gap: 40px;
+}
+section .box{
+    /* margin-top: 30px; */
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 10px;
+    
+}
+footer{
+    background-color: rgb(219, 42, 184);
+    height: 50px;
+    margin-top: 50px;
+    width: 80%;
+    margin-inline: auto;
+    border-radius: 10px;
+}
