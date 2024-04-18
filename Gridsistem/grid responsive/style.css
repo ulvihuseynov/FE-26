@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: black;
+padding: 20px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+
+}
+.item{
+    text-transform: capitalize;
+    text-align: center;
+    /* border: 1px solid red; */
+    background-color: white;
+    color: rgb(1, 13, 234);
+    padding: 15px;
+    /* margin: 10px; */
+    font-size: 20px;
+
+}
+
+@media (max-width:768px) {
+    .container{
+        grid-template-columns:repeat(2, 1fr) ;
+    }
+}
+
+@media (max-width:500px) {
+    .container{
+        grid-template-columns:repeat(1, 1fr) ;
+    }
+}
+

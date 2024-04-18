@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(234, 237, 237);
+}
+header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid rgb(115, 2, 87);
+}
+.container{
+    max-width: 1200px;
+    margin:100px auto ;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap:30px;
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    /* border: 2px solid black; */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px grey;
+}
+h3{
+    font-size:15px ;
+}
+header p{
+    opacity: 0.5;
+}
+.card-lead{
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+
+}
+.desc{
+    font-size: 15px;
+    line-height: 1.4;
+    opacity: 0.7;
+}
+.card:nth-child(1){
+    background-color: purple;
+    color: #fff;
+    /* background: url(https://www.freeiconspng.com/thumbs/quotation-icon/quotation-icon-20.png);
+    background-repeat: no-repeat;
+    background-position: top 10px right 100px;
+    background-size: contain; */
+}
+.card:nth-child(2){
+    background-color: rgb(70, 60, 70);
+    color: #fff;
+}
+
+.card:nth-child(4){
+    background-color: rgb(21, 20, 21);
+    color: #fff;
+}
+.card:nth-of-type(1){
+    grid-column: 1 / span 2;
+}
+.card:nth-of-type(5){
+ grid-column: 4;
+ grid-row: 1 /span 2;
+}
+.card:nth-child(4){
+    grid-column: 2/4;
+    grid-row: 2;
+}
+@media (max-width:768px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .card:nth-of-type(1){
+        grid-column: 1 ;
+    }
+    .card:nth-of-type(5){
+     grid-column: 1;
+     grid-row:  5;
+    }
+    .card:nth-child(4){
+        grid-column: 1;
+        grid-row: 4;
+    }
+}

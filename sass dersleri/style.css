@@ -1,1 +1,118 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+inherit, .container {
+  border: 4px solid green;
+  width: 100%;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.container {
+  box-shadow: 1px 1px 2px rgb(71, 75, 80);
+  background-color: rgb(213, 211, 211);
+  height: 50px;
+}
+.container nav {
+  display: flex;
+}
+.container nav ul {
+  display: flex;
+  gap: 40px;
+}
+.container nav ul li a {
+  font-size: 20px;
+  color: rgb(32, 33, 33);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container nav ul li a:hover {
+  border-bottom: 3px solid red;
+}
+
+.mesagge, .info, .warning, .success, .error {
+  margin: 15px;
+  border: 4px solid red;
+  width: 150px;
+  padding: 8px;
+  color: turquoise;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.error {
+  color: red;
+  width: 200px;
+  background-color: yellow;
+  font-size: 20px;
+  border-radius: 50px;
+}
+.error:hover {
+  background-color: red;
+  color: white;
+}
+
+.success {
+  border-color: green;
+  color: green;
+  width: 200px;
+  background-color: rgb(177, 177, 173);
+  font-size: 20px;
+  border-radius: 10px;
+}
+.success:hover {
+  background-color: green;
+  color: white;
+}
+
+.warning {
+  border-color: orange;
+  color: orange;
+}
+.warning:hover {
+  background-color: orange;
+  color: white;
+}
+
+.info {
+  border-color: turquoise;
+}
+.info:hover {
+  background-color: turquoise;
+  color: white;
+}
+
+.font-size1 {
+  font-size: 10px;
+}
+
+.font-size2 {
+  font-size: 20px;
+}
+
+.font-size3 {
+  font-size: 30px;
+}
+
+.font-size4 {
+  font-size: 40px;
+}
+
+.font-size5 {
+  font-size: 50px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,113 @@
+@import "variable";
+@import "reset";
+@mixin mix ($size,$colored,$font,$direction){
+width: $size;
+background-color: $colored;
+font-size: $font;
+@if $direction==up{
+ border-radius: 50px;
+} @else if  $direction==down{
+    border-radius: 10px;
+}
+}
+inherit{
+    border: 4px solid green;
+    width: $width;
+border-radius: 10px;
+text-transform: uppercase;
+padding: 10px;
+}
+.container{
+    box-shadow: $boxShadow;
+background-color: $bgColor;
+height: $height;
+
+@extend inherit;
+nav{
+    display: flex;
+  
+    ul{
+        display: flex;
+        gap: 40px;
+        li{
+            // list-style-type: none;
+         a{
+            font-size: 20px;
+            // text-decoration: none;
+            color: rgb(32, 33, 33);
+            font-family:$font ;
+            &:hover{
+                border-bottom: 3px solid red;
+            }
+ }
+        }
+    }
+}
+}
+
+.mesagge{
+    margin: 15px;
+    border: 4px solid red;
+    width: 150px;
+    padding: 8px;
+    color: turquoise;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none
+    };
+    .error{
+      @extend .mesagge;
+color:red;
+@include mix(200px,yellow,20px,up);
+&:hover{
+    background-color: red;
+   color:white;
+
+}
+    };
+    .success{
+        @extend .mesagge;
+        border-color: green;
+        color: green;
+        @include mix(200px,rgb(177, 177, 173),20px,down);
+        &:hover{
+            background-color: green;
+           color:white;
+        
+        }
+    }
+    .warning{
+        @extend .mesagge;
+        border-color: orange;
+        color: orange;
+        &:hover{
+            background-color: orange;
+           color:white;
+        
+        }
+    };
+    .info{
+        @extend .mesagge;
+        border-color: turquoise;
+        &:hover{
+            background-color: turquoise;
+           color:white;
+        
+        }
+    }
+
+    // $olculer: 5,10,15;
+    // @each $olcu in $olculer{
+    //     .font-size#{$olcu}{
+    //         font-size: $olcu;
+    //     }
+      
+    // }
+
+    @for $value from 1 through 5{
+        // $value: $value *5;
+        .font-size#{$value}{
+            font-size: 10px *$value;
+        }}
+  

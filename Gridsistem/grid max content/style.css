@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: black;
+padding: 20px;
+display: grid;
+height: 600px;
+/* grid-template-columns: minmax(300px ,1fr) 1fr 1fr ; */
+/* grid-template-columns: repeat(3, minmax(200px ,1fr)) ; */
+/* grid-template-columns: repeat(auto-fill, minmax(300px ,1fr)) ; */
+/* grid-template-columns: repeat(auto-fit, minmax(300px ,1fr)) ; */
+grid-template-columns: repeat(3,1fr);
+justify-items: center;
+gap: 20px;
+
+}
+.item{
+    text-transform: capitalize;
+    text-align: center;
+    /* border: 1px solid red; */
+    background-color: white;
+    color: rgb(1, 13, 234);
+    padding: 15px;
+    /* margin: 10px; */
+    font-size: 20px;
+
+}
