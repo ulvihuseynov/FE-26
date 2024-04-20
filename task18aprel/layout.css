@@ -1,0 +1,16 @@
+.container{
+    margin-top: 40px;
+    background-color: white;
+}
+.justfy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+gap: 40px;
+}
+.col-4{
+    width: calc(100% /12*3);
+    border: 1px solid rgb(203, 200, 200);
+    box-shadow: 1px 0px 1px gray;
+    padding: 20px;
+}

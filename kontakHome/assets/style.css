@@ -1,0 +1,62 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{
+    font-size:25px ;
+    margin: 30px;
+}
+.col{
+    padding: 30px;
+}
+.item{
+/* text-align: center; */
+    border: 1px solid black;
+
+    padding: 20px;
+}
+.icon, .foot{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 10px; */
+    margin-top: 10px;
+}
+.icon a i{
+    font-size: 20px;
+    color: gray;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+  width: 200px;
+  height: 200px;
+
+}
+.desc{
+    opacity: 50%;
+}
+.price-old{
+    margin-top: 10px;
+    text-decoration: line-through;
+}
+.price-new{
+    color: red;
+    font-size: 18px;
+}
+button{
+    font-size: 18px;
+    border: none;
+    width: 60%;
+    padding:4px ;
+    border-radius: 10px;
+}
+.foot a i {
+    padding: 10px;
+color: rgb(13, 13, 13);
+    font-size: 18px;
+    border-radius: 10px;
+
+    background-color: rgb(218, 215, 215);
+}

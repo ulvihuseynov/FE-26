@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 50px;
+    background-color: black;
+}
+.mb{
+    margin-bottom: 50px;
+}
+.item{
+    margin-inline:auto ;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 250px;
+    width: 250px;
+    background-color: rgb(152, 148, 148);
+   /* padding-inline:30px ; */
+  
+}
+footer{
+    margin-inline:auto ;
+    width: 50%;
+    height: 50px;
+    background-color: palevioletred;
+}
