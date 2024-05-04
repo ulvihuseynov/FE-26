@@ -1,72 +1,133 @@
 .box{
     display: none;
-    margin: 40px;
-    width: 300px;
-    height: 300px;
-    /* background-color: aqua; */
-    /* transform: rotate(5deg); */
-    transition: all 1s;
+    width: 250px;
+    height: 250px;
     position: relative;
+    /* background-color: aquamarine; */
+    z-index: 1;
+    perspective: 1000px;
+ 
 }
 .box .front, .box .back{
-    height: inherit;
-    width: inherit;
     backface-visibility: hidden;
+    width:inherit ;
+    height: inherit;
     position: absolute;
-    transition: 1s all;
-    perspective: 800px;
+    transition: all 2s ease-in-out;
+    /* z-index: 3; */
 }
-.front{
+.box .front{
     background-color: red;
+    /* transform: rotatey(180deg); */
 }
-.back{
-    background-color: green;
+.box .back{
+    background-color: rgba(56, 56, 250, 0.86);
     transform: rotatex(-180deg);
 }
-.box:hover .front{
+.box:hover  .front{
     transform: rotatex(180deg);
 }
-
-.box:hover .back{
+.box:hover  .back{
     transform: rotatex(0deg);
 }
+*{margin: 0;}
 
+
+
+/*input:checked + .skewbox{
+    transform: skew(90deg,90deg);
+}
 .skewbox{
+    margin-top: 120px;
     display: none;
     width: 200px;
     height: 200px;
     background-color: lightblue;
-    transform: skew(45deg,60deg);
+ 
+    transition: all 1s;
 }
 button{
-    /* box-sizing: border-box; */
+    display: none;
+    /* box-sizing: border-box; 
     display: block;
     border: 2px solid red;
     width: 200px;
-    /* height: 30px; */
-    /* padding: 10px; */
+    /* height: 30px; 
+    /* padding: 10px; 
    text-align: center;
    text-decoration: none;
    position: relative;
-   /* background-color: transparent; */
+   background-color: transparent;
   z-index: 1;
   overflow: hidden;
+  line-height: 30px;
 }
 button::before{
+    /* display: none; 
     content: "";
     width: 100%;
     height: 100%;
-    background-color: rgb(5, 157, 107);
+    background-color: rgb(129, 205, 180);
     position: absolute;
     left: -120%;
     top: 0;
     transition: all 1s;
     z-index: -1;
-    transform: skew(50deg);
+    transform: skew(-50deg);
   
 }
 button:hover::before{
-left: 50%;
+left: -50%;
 /* z-index: 1; */
-/* z-index: -6; */
+/* z-index: -6; 
+}*/
+
+/* .scaleBox{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+   margin: 40px;
+    transition: 1s all;
 }
+
+.scaleBox:hover{
+    transform: scale(0.4);
+} */
+.menubtn{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    border: 2px solid gray;
+    font: bold 18px arial ,sans-serif;
+}
+input:checked + ul{
+transform: translateX(0);
+}
+
+ul{
+    transition: 1s all;
+    right: 0px;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    /* right: 0; */
+    background-color: black;
+    /* padding: 10px; */
+    transform:translateX(100%) ;
+    
+}
+ul li{
+    padding: 20px;
+    list-style: none;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font: bold 18px arial ,sans-serif;
+
+}
+
+
+
